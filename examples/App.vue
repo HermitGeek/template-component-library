@@ -1,13 +1,13 @@
 <template>
   <div id="app">
-      div
+      <router-view></router-view>
   </div>
 </template>
 
 
 
 <style lang="sass">
-@import "assets/normalize.css";
+@import "assets/css/normalize.css";
 
 </style>
   
