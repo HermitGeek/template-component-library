@@ -47,7 +47,41 @@
     ```
 
 
+
 ### npm 发包教程
+
+- 此组件库，发包之前需要 先打包，执行指令如下
+
+
+    ```
+    $ npm run lib
+    ```
+
+- 配置 `package.json` 文件中发布到 npm 的字段
+
+    - name: 包名，该名字是唯一的。可在 npm 官网搜索名字，如果存在则需换个名字。
+
+    - version: 版本号，每次发布至 npm 需要修改版本号，不能和历史版本号相同。
+
+    - description: 描述。
+
+    - main: 入口文件，该字段需指向我们最终编译后的包文件。
+
+    - keyword：关键字，以空格分离希望用户最终搜索的词。
+
+    - author：作者 必须和npm账户名一直
+
+    - private：是否私有，需要修改为 false 才能发布到 npm
+
+
+
+- npm 镜像还原
+
+    > 如果配置了淘宝镜像，先设置回npm镜像，否则不能发包
+
+    ```
+    $ npm config set registry http://registry.npmjs.org 
+    ```
 
 - 登录 npm  
 
@@ -63,5 +97,6 @@
     ```
     $ npm publish
     ```
+
 
 
