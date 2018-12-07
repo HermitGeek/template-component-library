@@ -4,9 +4,7 @@
   </div>
 </template>
 
-
-
-<style lang="sass">
+<style>
 @import "assets/css/normalize.css";
 
 </style>

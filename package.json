@@ -1,20 +1,18 @@
 {
-  "name": "vue-flexible-map",
-  "version": "0.1.0",
-  "description": "基于 AMap 、BMap 的地图可视化 Vue组件库",
-  "main": "lib/vue-flexible-map.umd.min.js",
-  "keyword": "vue-flexible-map map vue-map",
+  "name": "template-component-library",
+  "version": "0.0.1",
+  "description": "基于 vue-cli 3.0 改写的 vue组件库模板（支持按需引入）",
+  "main": "lib/template-component-library.umd.min.js",
+  "keyword": "template-component-library map vue-map",
   "author": "zxvictory",
   "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "lib": "vue-cli-service build --target lib --name vue-flexible-map --dest lib packages/index.js"
+    "lib": "vue-cli-service build --target lib --name template-component-library --dest lib packages/index.js"
   },
   "dependencies": {
-    "highlight.js": "^9.12.0",
-    "vue": "^2.5.17",
     "vue-router": "^3.0.1"
   },
   "devDependencies": {
