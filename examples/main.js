@@ -1,18 +1,15 @@
 import Vue from 'vue';
 import App from './App.vue';
 import router from './router';
-import ColorPicker from './../packages/index';
-import hljs from 'highlight.js'
-import 'highlight.js/styles/railscasts.css'
+import {
+  DatePicker
+} from './../packages';
 
 
 
-Vue.use(ColorPicker);
+Vue.use(DatePicker);
 Vue.config.productionTip = false;
-Vue.directive('hljs', el => {
-  let blocks = el.querySelectorAll('pre')
-  Array.prototype.forEach.call(blocks, hljs.highlightBlock)
-});
+
 
 
 new Vue({

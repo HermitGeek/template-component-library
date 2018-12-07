@@ -1,16 +1,19 @@
-// 导入颜色选择器组件
-import colorPicker from './color-picker'
+import DatePicker from './components/date-picker'
 
-// 存储组件列表
+
+
+const version = '0.0.1';
 const components = [
-  colorPicker
-]
+  DatePicker
+];
 
-// 定义 install 方法，接收 Vue 作为参数。如果使用 use 注册插件，则所有的组件都将被注册
+/**
+ * 定义 install 方法, 外部 Vue.vue() 时自动调用
+ * https://cn.vuejs.org/v2/guide/plugins.html#%E5%BC%80%E5%8F%91%E6%8F%92%E4%BB%B6
+ */
+
 const install = function (Vue) {
-  // 判断是否可以安装
-  if (install.installed) return
-  // 遍历注册全局组件
+  // 全局注册 所有组件
   components.map(component => Vue.component(component.name, component))
 }
 
@@ -20,8 +23,10 @@ if (typeof window !== 'undefined' && window.Vue) {
 }
 
 export default {
-  // 导出的对象必须具有 install，才能被 Vue.use() 方法安装
   install,
-  // 以下是具体的组件列表
-  colorPicker
+  version
+}
+
+export {
+  DatePicker
 }
